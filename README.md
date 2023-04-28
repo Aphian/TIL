@@ -5,7 +5,7 @@
 
 
 ## 일반적인 프로젝트 필수사항
-1. `1.gitignore`
+1. `.gitignore`
 2. `READEME.md`
 
 ## Readme 작성방법
