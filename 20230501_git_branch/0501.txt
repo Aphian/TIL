@@ -53,4 +53,3 @@ git commit --amend # 직전 커밋만 수정할 수 있다.
 
 git config --global alias.logog 'log --oneline --graph' : git alias(별명 가능)
   - 위 설정 등록 후 git logog 실행시 git log log --oneline --graph 실행
-
