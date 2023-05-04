@@ -24,6 +24,8 @@
 - `checkout` : branch와 commit id 두개 모두를 사용가능함
 - `switch` : branch 이름만 사용
 - `git merge` : branch 와 branch를 합치는 명령어 / 움직여야 하는(합침을 당하는쪽에) branch에서 사용
+
+
 ## Merge 상황
 1. FF (Fast Forward) : 한 branch 와 master가 합침 -> master가 합쳐짐
 2. Auto Merge :   - 자동으로 잘 합쳐짐 (자동으로 Merge Commit 발생!)
@@ -33,6 +35,7 @@
 	2. git add 
 	3. git commit 수동 커밋
 - -->> merge 이후 잘 되면, 그대로 진행. Conflict 나면 수동으로 해결 후 커밋
+
 
 ## Git reset
 `git reset --soft HEAD~` : 마지막 커밋의 변경사항을 stage 상태로 되돌림 (staged)
