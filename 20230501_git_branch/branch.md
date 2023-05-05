@@ -42,7 +42,7 @@
 `git reset --mixed HEAD~` / git reset HEAD~ : 마지막 커밋의 변경사항을 stage 하지 않음 (modified)
 `git reset --hard HEAD~` : 변경사항이 날아감, 마지막 커밋의 변경사항 모두 삭제(unmodified) 
 
-commit 메시지 수정
+## commit 메시지 수정
 - 다만 필요한 경우 길게 쓸수 있는데, 이때는 `git commit -m `보다는 `git commit` 이후 vim으로 들어가 길게 쓰는게 좋다.
 `git commit` : -m 옵션 없이 길게 메시지 작성 가능
 `git commit --amend #` :  직전 커밋만 수정할 수 있다.
