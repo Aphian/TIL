@@ -40,7 +40,7 @@ Unix 와 Windows 명령어가 다름
 - `| (파이프)` :  왼쪽 표준 출력을 오른쪽 명령어 뒤에 붙임
 - `wc` : 파일/ 출력의 줄/ 단어/ 글자수를 보여줌
 - `diff` : 두 파일간의 차이를 보여줌 
-- [`command` A | command B << command A 결과를 붙이기
+- `command` A | command B << command A 결과를 붙이기
 - `less` : 문서에서 찾아보기 / 파일을 열어서 탐색 가능 (q로 나옴)
 - `grep` : 특정 문자열 찾기 [Globally search a Regular Expression and Pring], 파일 내용 찾기
 - `ps` : 현재 실행 중인 프로세서 상태 확인
