@@ -48,3 +48,5 @@
     article.user = request.user
     article.save()
   ```
+  ### login 유무에 따른 html 구현
+  - `html` 내에서 바로 가져올수 있는 `user` 와 `views.py` 에서 `ContextList` 에서 받아온 데이터를 비교하면서 `DTL` 을 이용하여 로그인 유무 / 다른 계정 로그인 에 따른 `HTML`이 구현이 가능하다.
