@@ -1,4 +1,5 @@
 ## DataScience
+---
 ### Pandas(판다스)
 - `Series`, `DataFrame` 등의 자료구조를 활용한 데이터분석 기능을 제공하는 라이브러리
 - `Series` - 1차원 배열
@@ -6,7 +7,7 @@
 - 서로 다른 유형의 데이터를 공통된 포맷으로 정리하는 것
 - 행과 열로 이루어지 2차원 `DataFrame`을 처리 할 수 있는 함수 제공
 - 실무 : `DataFrame`
-
+---
 ### Series(시리즈)
 - `Pandas`의 기본 객체 중 하나
 - `numpy`의 `ndarray`를 기반으로 인덱싱 기능을 추가하여 1차원 배열로 나타냄
@@ -15,7 +16,7 @@
 - `index` 와 `value` 1:1로 대응
 - 딕셔너리와 비슷한 구조
 - 생성 : `Pandas` 내장 함수 `Series()` 이용
-
+---
 #### Series 생성
 - `data` 만드로 생성 가능
 - `range()` , `numpy.arrange` 함수 사용 가능
@@ -27,7 +28,7 @@
 - `index` 접근이 가능할 뿐 할당(`assign`)은 불가능함.
 - `index`의 `name` 속성으로 이름 부여 : `Series 객체.index.name = [이름]`
 - `Series 객체.name` : `value`에 이름을 부여하여 의미 전달
-
+---
 #### Series 인덱싱
 - 정수형 인덱스 : 숫자 -> `Series 객체[0]`
 - 문자형 인덱스 : 문자 -> `Series 객채['문자열 인덱스']`
@@ -40,7 +41,7 @@
 - 문자(라벨)인덱스 이용 슬라이싱
   1. 시리즈['시작라벨':'끝라벨'] : 표시된 라벨 범위 모두 추출
 - 인덱스를 통한 데이터 업데이트 가능
-
+---
 #### Series 연산
 - `numpy` 배열처럼 `pandas`의 시리즈도 벡터화 연산 가능
 - 벡터화 연산이란 집합적 자료형의 원소 각각을 독립적으로 계산을 진행하는 방법
@@ -55,7 +56,7 @@
 - 딕셔너리로 `Series` 생성 가능 `key`이 `index` , `value`가 원소값(`value`)
 - 딕셔너리는 순서를 갖지 않음 / `index` 명시적으로 지정하는게 좋음.
 - 인덱싱을 이용하여 갱신(업데이트), 추가, 삭제 가능.
-
+---
 #### Series 함수
 - `size(속성)` : 개수 반환
 - `shape(속성)` : 튜플형태로 `shape`반환
@@ -66,7 +67,7 @@
 - `date_range` : 날짜 자동 생성
   1. `pd.date_range(start=None, end=None, periods=None, freq='D')`
   2. `start` : 시작날짜, 필수/ `end`= 끝날짜 / `periods` = 날짜 생성기간, 둘 중 하나(`end`, `periods`/ `freq` = 날짜 생성 주기 `dafault` day
-
+---
 ### DataFrame(데이타프래임)
 - 2차원 행렬 데이터에 인덱스를 붙인 것
 - 행과 열로 만들어지는 2차원 배열 구조
