@@ -20,3 +20,11 @@
 - 하이퍼파라미터 배치나 조정을 가장 적절하게 바꿔주는 역할
 - 학습의 마지막쯤에서 자동으로 배치사이즈나 학습율등을 조정하는 역할
 - `Adam` : 모멘텀 최적화와 RMSprop의 장점을 접목한 옵티마이저 함수
+
+#### Callback 객체
+- 20번의 에포크동안 모델을 훈련하여 검증 점수가 상승하는 지점을 확인한 후 다시 그 지점까지 다시 훈련하는 방법을 사용
+- 훈련 과정 중간에 어떤 작업을 수행할 수 있게 하는 객채 `back end` 에서 진행
+- `.fit()` 메서드에 `callbacks` 매개변수에 리스트로 전달
+- `keras.callbacks.ModelCheckpoint()` : 최상의 검증 점수를 낸 모델이 저장(베스트 파라미터 모델과 같은 개념)
+- `keras.callbacks.EarlyStopping(patience=n, restore_best_weights=True)`
+  - 조기종료 콜백
