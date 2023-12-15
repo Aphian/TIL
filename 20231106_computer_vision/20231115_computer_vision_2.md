@@ -14,8 +14,8 @@
 - `Zero-shot model` : `semantic information`은 여러 종류가 될 수 있는데, 한 가지 예시를 들면 `data`의 `class`를 `word embedding`으로 사용하는 것
 
 #### Generative Model
-- `Stable Diffusion` : 
-- `idjourney` : 
+- `Stable Diffusion` : 텍스트 및 이미지 프롬프트에서 고유한 실사 이미지를 생성하는 생성형 인공 지능(생성형 AI) 모델
+- `Midjourney` : 텍스트를 입력하면 AI가 이미지를 생성해주는(Text-to-Image) 모델
 - `DALL.E2` : 
 - `Discriminative Model` : p(y|x)
 - `Generative Model`: p(x)
