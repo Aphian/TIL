@@ -15,19 +15,19 @@
 
 #### Generative Model
 - `Stable Diffusion` : 텍스트 및 이미지 프롬프트에서 고유한 실사 이미지를 생성하는 생성형 인공 지능(생성형 AI) 모델
-- `Midjourney` : 텍스트를 입력하면 AI가 이미지를 생성해주는(Text-to-Image) 모델
-- `DALL.E2` : 
-- `Discriminative Model` : p(y|x)
-- `Generative Model`: p(x)
-- `Representation Learnig` : `Latent Space`
+- `Midjourney` : 텍스트를 입력하면 AI가 이미지를 생성해주는`(Text-to-Image)` 모델
+- `DALL.E2` : `OpenAI`에서 개발한 생성형 이미지 인공지능, 텍스트를 이미지로 구현할수 있는 모델
+- `Discriminative Model` : p(y|x), 판별 모델 또는 분별 모델은 주어진 데이터를 가지고 분류하거나 분류에 쓰일 수 있는 점수를 매기는데 사용되는 통계 모델
+- `Generative Model`: p(x), 생성 모델은 분포에 맞는 데이터를 생성해내는 통계 모델
+- `Representation Learning` : `Latent Space`, 입력 데이터를 기반으로 `expectation`(기댓값, 기대출력)에 가깝게 만드는 유용한 표현`(representation)`을 학습`(learning)`하는 것
 - `Evaludation` 
-  1. `Inception Score`
-  2. `FID Score` 평균 과 공분산 활용
-  3. `Fidelity`
-  4. `Alignment`
-- `Autoencoder`
-- `Variationasl Autoencoder` : `distribution`
-- `GAN(Generative Adverarial Network)`
-- `Energe based model`
-- `DDM` : `U-Net`
-- `DDPM` : 
+  1. `Inception Score` : 생성된 영상의 품질, 생성된 영상의 다양성`(diversity)` 성능평가
+  2. `FID Score` 평균과 공분산 활용, GAN을 사용해 생성된 영상의 집합과 실제 생성하고자 하는 클래스 데이터의 분포의 거리를 계산한다. 거리가 가까울수록 좋은 영상으로 판단
+  3. `Fidelity` : 두 이미지를 구별하는 능력 또는 이미지가 실제 소스 분포를 얼마나 잘 나타내는지 평가
+- `Autoencoder` : `representation learning` 작업에 신경망을 활용하도록 하는 비지도 학습 방법
+- `Variational Autoencoder` : `distribution`, `encoder`와 `decoder`를 활용해 `latent space`를 도출하고, 이 `latent space`로 부터 우리가 원하는 결과를 `decoding`함으로써 정보를 생성함
+  - `latent space`는 데이터가 가지고 있는 잠재적인 변수
+- `GAN(Generative Adverarial Network)` : 적대적 생성 신경망, 실제에 가까운 이미지나 사람이 쓴 것과 같은 글 등 여러 가짜 데이터들을 생성하는 모델
+- `Energy based model` : 에너지 기반 모델은 통계 물리학에서 학습으로 직접 가져온 생성 모델
+- `DDM` : `U-Net`,  저차원 뿐만 아니라 고차원 정보도 이용하여 이미지의 특징을 추출함과 동시에 정확한 위치 파악도 가능하게 하자는 것, 인코딩 단계의 각 레이어에서 얻은 특징을 디코딩 단계의 각 레이어에 합치는(concatenation) 방법을 사용
+- `DDPM` : `Denosing Diffusion Probabilistic Models`
