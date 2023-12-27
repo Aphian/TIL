@@ -5,3 +5,39 @@
   1. 독립적이고 재사용 가능한 코드 조각
   2. 재사용성을 촉진하여 더 적은 코드
   3. 관리 가능한 코드베이스 및 일관된 룩앤필을 제공
+
+### Create React App
+- `CRA` : 복잡한 구성을 추상화하고 경량이면서도 강력한 환경을 설정하여 애플리케이션 작성에 집중할 수 있도록 해준다.
+- `Node.js` 와 `npm` 설치 필요
+  1. `npx` : `npm(Node Package Manager)`과 함께 제공되는 패키지 실행 도구
+- `npm start` : 명령을 사용하여 애플리케이션 실행
+- `npm test` : 명령을 사용하여 테스트 실행
+- `node --version` : `Node.js` 버전 확인
+- `npm --version` : `npm` 버전 확인
+
+#### Component
+- 함수형 `Component` : 가장 간단한 유형의 `React Component`
+  ```
+  function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+  --> `Welcome`가 함수형 컴포넌트, `props`를 인수로 받아 `React` 요소를 반환
+  ```
+- 이해하고 작성하기 쉬워서 가능한 한 많이 사용하는 것이 좋음
+- `useState, useEffect, useContext` 등과 같은 `React Hooks`을 사용하려면 함수 컴포넌트를 사용해야함
+- `props`를 전달받아 이를 기반으로 하는 렌더링에서는 좋은 성능
+- 클래스 `Component` : 더 복잡하지만, 더 많은 기능을 제공
+  ```
+  class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
+  }
+  ```
+- 레거시 프로젝트나 이전 버전의 라이브러리에서 작업 하는 경우 활용
+- 라이프사이클 메서드를 필요로 할 경우
+
+#### React Hooks
+- 함수 컴포넌트에서 상대와 다른 `React` 기능을 사용할 수 있도록 하는 함수
+- `useState` : 
+- `useEffect` : 
