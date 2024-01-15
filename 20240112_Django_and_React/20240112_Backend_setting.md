@@ -1,4 +1,5 @@
 ### Django Backend 설정
+
 1. 프로젝트 생성 : `django-adim startproject 프로젝트명`
 2. `Model, View, URL`  구현 
    - `model` : 데이터베이스의 테이블
