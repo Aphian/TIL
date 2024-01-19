@@ -8,4 +8,12 @@
 - `DBMS` : 데이터베이스를 관리하는 소프트웨어
 
 #### JPA 이해
-- 
+- 스프링 부트는 `JPA(Java Persistence API)`를 이용하여 `DB` 관리
+  1. `JPA`에서 대표적으로 하이버네이트가 있음
+  2. 하이버네이트는 자바의 `ORM` 프레임워크
+
+#### DB 설치
+- `build.gradle` 파일에 사용할 `DB` 설치
+  1. `Gradle` -> `Refresh Gradle Project` 라이브러리 설치
+- `src/main/resources` 디렉토리 -> `application.perperties` 파일에 설정 추가
+- `JPA` 환경 설정 : `build.gradle` 파일에 추가
