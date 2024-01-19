@@ -17,3 +17,8 @@
   1. `Gradle` -> `Refresh Gradle Project` 라이브러리 설치
 - `src/main/resources` 디렉토리 -> `application.perperties` 파일에 설정 추가
 - `JPA` 환경 설정 : `build.gradle` 파일에 추가
+
+#### Entity 생성
+- `src/main/java` 디렉토리 `com.mysite.프로젝트명` 패키지에 생성
+- `@Entity` 애너테이션을 적용해야 인식함
+- `@ManyToOne`, `@OneToMany` 애너테이션으로 관계를 인식
