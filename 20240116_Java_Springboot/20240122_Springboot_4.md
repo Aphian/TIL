@@ -34,3 +34,24 @@ public interface QuestionRepository extends JpaRepository<Question, Integer> {
 #### 템플릿 사용
 - `src/main/resources` 디렉토리에 `templates` 선택 -> `New -> File` -> `HTML` 생성 
 - 컨트롤러에서 `return` 값에 `html` 확장자 파일 작성
+- `Model` 클래스를 사용하여 `DB`에 있는 애용 템플릿에 전달할 수 있음.
+- `@RequiredArgsConstructor` 애너테이션의 생성자 방식으로 `questionRepository` 객체를 주입, `Lombok` 에서 제공하는 애너테이션으로 `final`이 붙은 속성을 포함하는 생성자를 자동으로 만들어 주는 역할
+- 스프링부트 내부적으로 `Controller`를 생성할 때 `Lombok`으로 만들어진 생성자에 의해 `Repository` 객체가 자동으로 주입
+- `Model` 객체는 자바 클래스와 템플릿 간의 연결 고리 역할
+```
+<tr th:each="question : ${questionList}">
+-> th:each Thymeleaf 사용하는 속성 일종의 자바의 for ... each 문
+```
+
+#### Thymeleaf 속성
+- 분기문 속성 : `tag : if`문 ,`else if` 문
+- 반복문 속성 : `tag : each` 문 -> `for ... each `문과 유사 
+  1. `loop.index`: 루프의 순서(루프의 반복 순서, 0부터 1씩 증가)
+  2. `loop.count`: 루프의 순서(루프의 반복 순서, 1부터 1씩 증가)
+  3. `loop.size`: 반복 객체의 요소 개수(예를 들어 questionList의 요소 개수)
+  4. `loop.first`: 루프의 첫 번째 순서인 경우 `true`
+  5. `loop.last`: 루프의 마지막 순서인 경우 `true`
+  6. `loop.odd`: 루프의 홀수 번째 순서인 경우 `true`
+  7. `loop.even`: 루프의 짝수 번째 순서인 경우 `true`
+  8. `loop.current`: 현재 대입된 객체
+- 텍스트 속성 : `tag : text` 값을 직접 출력
