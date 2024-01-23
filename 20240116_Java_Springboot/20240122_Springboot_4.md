@@ -44,8 +44,8 @@ public interface QuestionRepository extends JpaRepository<Question, Integer> {
 ```
 
 #### Thymeleaf 속성
-- 분기문 속성 : `tag : if`문 ,`else if` 문
-- 반복문 속성 : `tag : each` 문 -> `for ... each `문과 유사 
+- 분기문 속성 : `th : if`문 ,`else if` 문
+- 반복문 속성 : `th : each` 문 -> `for ... each `문과 유사 
   1. `loop.index`: 루프의 순서(루프의 반복 순서, 0부터 1씩 증가)
   2. `loop.count`: 루프의 순서(루프의 반복 순서, 1부터 1씩 증가)
   3. `loop.size`: 반복 객체의 요소 개수(예를 들어 questionList의 요소 개수)
@@ -54,4 +54,4 @@ public interface QuestionRepository extends JpaRepository<Question, Integer> {
   6. `loop.odd`: 루프의 홀수 번째 순서인 경우 `true`
   7. `loop.even`: 루프의 짝수 번째 순서인 경우 `true`
   8. `loop.current`: 현재 대입된 객체
-- 텍스트 속성 : `tag : text` 값을 직접 출력
+- 텍스트 속성 : `th : text` 값을 직접 출력
