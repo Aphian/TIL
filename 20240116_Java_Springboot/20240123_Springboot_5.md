@@ -37,3 +37,40 @@ ex)
 
 #### URL Prefix 
 - 메서드 위에 `@RequestMapping("/앞쪽의 URL명")`
+
+#### Post 매핑
+- 메서드 위에 `@PostMapping("URL")` 작성
+- 메서드 변수에 `@RequestParam(value="name 속성 명")`
+
+#### 템플릿 스타일 적용
+- `src/main/resources` 디렉토리에 `static` 폴더에 `style.css` 파일 생성
+- 적용할 `html` 파일
+```
+<link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+링크 테그로 연결
+```
+#### 템플릿 상속
+- `CSS` 파일 이름이 변경되거나 새로운 `CSS 파일을 추가할 때 마다 모든 템플릿 파일을 일일이 수정을 해야하는 문제점해결을 위한 기능
+- 기본 틀이 되는 템플릿을 작성하고 다른 템플릿에서 그 템플릿을 상속해 사용하는 방법
+```
+ex)
+상속 하기
+<th:block html 파일 명:fragment="content"></th:block>
+th:block 기능 활용
+
+상속 받기
+<html `html 파일 명`:decorate="~{html 파일 명}">
+<div `html 파일 명 `:fragment="content" class="container my-3">
+    <table class="table">
+        (... 생략 ...)
+    </table>
+</div>
+상속 하는 html 과 상속 받는 html 간의 fragment가 동일해야 함
+```
+#### 폼 활용
+- 폼(`form`) 클래스 웹 프로그램을 개발하는 주요 구성 요소, 웹 프로그램에서 사용자가 입력한 데이터를 검증하는데 사용
+- `Spring boot Validation` 라이브러리 설치 -> `build.gradle` 수정
+- 패키지에 `~~~Form.java` 파일 생성, 내용 작성
+- 폼 클래스는 입력값 검증 과 입력 항목을 바인딩할 때도 사용
+- 컨트롤러에 전송
+  1. 메서드 변수 `@Valid ~~~Form 메서드`
