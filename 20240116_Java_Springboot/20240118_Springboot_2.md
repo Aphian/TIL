@@ -1,4 +1,4 @@
-### Springboot_2
+### Springboot 2
 
 #### Spring boot 구조
 - `com.mysite.sbb` 패키지 : 자파 파일을 저장하는 공간

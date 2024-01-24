@@ -1,4 +1,4 @@
-### Spring boot 5
+### Springboot 5
 
 #### ROot URL 매핑
 - 서버의 `URL` 을 요청할 때 도메인명 뒤에 아무런 주소를 덧붙이지 않는 `URL`을 루트 `URL`이라고 함
