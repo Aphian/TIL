@@ -13,3 +13,4 @@
 - 테스트 코드에 경우 생성자를 통한 객체 주입이 안되서 `@Autowired` 애너테이션을 사용함
 - `Run` -> `Run As` -> `JUnit Test` 순서로 테스트 코드 실행
 - `The file is locked` 오류가 발생 시 로컬 서버를 중지해줘야함
+- `@Test` 애너테이션은 `testJpa`메서드가 테스트 메서드란 의미
