@@ -29,3 +29,4 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 - `Springboot` 안에서 `Test` 코드를 이용할 경우 `DB` 세션이 끊김으로 인한 오류가 발생할 수 있음
 - 실질적인 서버에서는 발생하지 않는 오류임
 - 오류를 해결하기 위해 `Transactional` 애너테이션 사용
+- `Java` 파일이 기능별로 정리가 필요함
