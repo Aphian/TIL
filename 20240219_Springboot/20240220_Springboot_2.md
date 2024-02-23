@@ -14,3 +14,18 @@
 - `Run` -> `Run As` -> `JUnit Test` 순서로 테스트 코드 실행
 - `The file is locked` 오류가 발생 시 로컬 서버를 중지해줘야함
 - `@Test` 애너테이션은 `testJpa`메서드가 테스트 메서드란 의미
+
+### Springboot 5
+- 메서드를 이용해 데이터를 `CRUD`를 할 경우 `JpaRepository`를 상속 받은 `Interface`를 정의하고 그 안에 사용하고자하는 메서드를 정의해야함
+```
+ex)
+public interface QuestionRepository extends JpaRepository<Question, Integer>{
+	Question findBySubject(String subject);
+	Question findBySubjectAndContent(String subject, String content);
+	List<Question> findBySubjectLike(String subject);
+
+}
+```
+- `Springboot` 안에서 `Test` 코드를 이용할 경우 `DB` 세션이 끊김으로 인한 오류가 발생할 수 있음
+- 실질적인 서버에서는 발생하지 않는 오류임
+- 오류를 해결하기 위해 `Transactional` 애너테이션 사용
