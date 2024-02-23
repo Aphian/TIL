@@ -30,3 +30,5 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 - 실질적인 서버에서는 발생하지 않는 오류임
 - 오류를 해결하기 위해 `Transactional` 애너테이션 사용
 - `Java` 파일이 기능별로 정리가 필요함
+- 템플릿 : 자바 코드를 삽입할 수 있는 `HTML` 형식의 파일
+- 템플릿 엔진 `thymeleaf`
