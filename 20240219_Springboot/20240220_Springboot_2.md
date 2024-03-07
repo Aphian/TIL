@@ -36,3 +36,4 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 ### Springboot 6
 - `@Configuration` : 스프링의 환경 설정 파일 애너테이션
 - `@EnableWebSecurity` : 모든 요청 `URL`이 스프링 시큐리티의 제어를 받도록 하는 애너테이션, 스프링 시큐리티 활성화 역할
+- 비밀번호 보안을 위한 암호화 작업 : `BCryptPasswordEncoder` 클래스 사용, 비크립트 해시 함수
