@@ -32,3 +32,7 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 - `Java` 파일이 기능별로 정리가 필요함
 - 템플릿 : 자바 코드를 삽입할 수 있는 `HTML` 형식의 파일
 - 템플릿 엔진 `thymeleaf`
+
+### Springboot 6
+- `@Configuration` : 스프링의 환경 설정 파일 애너테이션
+- `@EnableWebSecurity` : 모든 요청 `URL`이 스프링 시큐리티의 제어를 받도록 하는 애너테이션, 스프링 시큐리티 활성화 역할
