@@ -37,3 +37,7 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 - `@Configuration` : 스프링의 환경 설정 파일 애너테이션
 - `@EnableWebSecurity` : 모든 요청 `URL`이 스프링 시큐리티의 제어를 받도록 하는 애너테이션, 스프링 시큐리티 활성화 역할
 - 비밀번호 보안을 위한 암호화 작업 : `BCryptPasswordEncoder` 클래스 사용, 비크립트 해시 함수
+
+### Springboot 7
+- `principal` 객체는 로그인을 해야 생성이 됨 -> 로그인이 안되어 있으면 오류가 발생한다.
+- `@PreAuthorize("isAuthenticated")` 애너테이션을 사용하여 해결 -> 로그인이 안되어 있으면 로그인 페이지로 이동 시켜주는 애너테이션
