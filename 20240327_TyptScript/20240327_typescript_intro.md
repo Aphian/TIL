@@ -13,4 +13,25 @@
 
 #### 2024. 3. 28.
 ### TypeScript 2
--
+
+#### TypeScript 기본 타입
+- `Boolean` : `let isDone: boolean = false;`
+- `Number` : `let num: number = 1;`
+- `String` : `let str: string = "red";`
+- `Array` : `let list: number[] = [1, 2, 3];`
+- `Tuple` : `let x: [string, number]; x = ["hello", 10]` -> 순서가 바뀌면 오류가 발생함
+- `Enum`
+```
+enum Color {Red, Green, Blue}
+let c: Color = Color.Green;
+```
+- `Any` : 알지 못하는 타입을 표현, 동적인 컨텐츠에서 값을 온다.
+  1. 타입의 일부만 알고 전체는 알지 못할 때 유용
+- `void` : 어떤 타입도 존재할 수 없음을 나타낼 때 사용
+- `Null, Undefined` : 다른 모든 타입의 하위 타입
+```
+let u: undefined = undefined;
+let n: null = null;
+```
+- `Never` : 절대 발생할 수 없는 타입, 함수 표현식이나 화살표 함수 표현식에서 항상 오류를 발생시키거나 절대 반환하지 않는 반환 타입으로 사용됨
+- `Object` : 
