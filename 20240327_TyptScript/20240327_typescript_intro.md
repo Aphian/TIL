@@ -34,4 +34,4 @@ let u: undefined = undefined;
 let n: null = null;
 ```
 - `Never` : 절대 발생할 수 없는 타입, 함수 표현식이나 화살표 함수 표현식에서 항상 오류를 발생시키거나 절대 반환하지 않는 반환 타입으로 사용됨
-- `Object` : 
+- `Object` : 원시 타입이 아닌 타입
