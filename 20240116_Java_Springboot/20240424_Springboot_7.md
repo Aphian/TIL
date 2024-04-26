@@ -10,4 +10,7 @@
 - `@Bean` 의 `name` 속성을 선언하면 메서드명으로 빈을 주입받을 수 없게 됨
 - `name` 속성으로 지정된 상태에서 `getBean()` 메서드를 호출하면 예외가 발생함
 - `@Mapper` : `XML Mapper` 에 선언된 `SQL` 중에서 메서드명과 동일한 `id`를 가진 `SQL` 쿼리를 찾아 실행함, `Mapper`에는 어노테이션이 필수적임
-- `MyBatisX 플러그인` : `Mapper` 와 `MML Mapper` 간의 이동이 쉬워지고 오류를 쉽게 캐치 가증
+- `MyBatisX 플러그인` : `Mapper` 와 `MML Mapper` 간의 이동이 쉬워지고 오류를 쉽게 캐치 가능
+
+### Springboot 9
+- 
