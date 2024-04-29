@@ -18,4 +18,9 @@
 - `Springboot` 는 기본으로 내장되어 있는 `Jackson` 라이브러리를 이용해서 `JSON` 문자열로 결과를 반환
 
 ### Springboot 10
-- 
+- `@Service` : 해당 클래스가 비지니스 로직을 담당하는 `Service Layer` 의 클래스 의미
+- `@RequiredArgsConstructor` : `Lombok`에서 제공해주는 기능, 클래스 내에 `final`로 선언된 모든 멤버에 대한 생성자 생성
+- `@Controller` : 사용자의 요청과 응답을 처리하는 컨트롤러 플래스 의미
+  1. 컨트롤러 메서드는 리턴 타입을 선언할 수 있음.
+  2. 리턴 문에 `HTML` 파일의 경로 선언
+- `Model` : 메서드의 파라미터로 선언된 `Model` 인터페이스는 데이터를 화면으로 전달하는데 사용
