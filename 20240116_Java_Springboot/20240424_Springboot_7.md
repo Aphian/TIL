@@ -16,3 +16,6 @@
 - `factoryBean.setMapperLocation()` : 선언해야 `XML Mapper`를 인식함
 - `mybatisConfig()` : `application.properties`에서 `mybatis.configuration` 으로 시작하는 설정을 읽어 스프링 컨테이너에 빈으로 등록
 - `Springboot` 는 기본으로 내장되어 있는 `Jackson` 라이브러리를 이용해서 `JSON` 문자열로 결과를 반환
+
+### Springboot 10
+- 
