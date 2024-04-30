@@ -26,5 +26,5 @@
 - `Model` : 메서드의 파라미터로 선언된 `Model` 인터페이스는 데이터를 화면으로 전달하는데 사용
 
 ### Springboot 11
-- 
+- `Mapper.xml` 파일에서 `useGeneratedKeys` 옵션을 `true`를 설정하면 생성된 게시글의 `PK`가 `parameterType`에 선언된 요청 객체에 저장되어 `keyProperty`에 선언된 `id`에 값이 매핑됨
 
