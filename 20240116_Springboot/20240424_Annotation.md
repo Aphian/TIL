@@ -1,4 +1,5 @@
 ### Springboot 7
+
 - `@EnableAutoConfiguration` : 필수적인 설정들의 처리, 다양한 설정들의 일부가 자동으로 완료됨
 - `@ComponentScan` : 자동으로 컴포넌트 클래스를 검색하고, 스프링 애플리케이션 컨텍스트에 빈으로 등록, 의존성 주입이 간편해짐
 - `@Configuration` : `Java` 기반의 설정파일로 인식
