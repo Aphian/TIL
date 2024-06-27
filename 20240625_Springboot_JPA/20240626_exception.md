@@ -1,4 +1,6 @@
-### 전역 예외 처리
+### Spring boot JPA 2
+
+#### 전역 예외 처리
 
 - `@RestControllerAdvice` : 컨트롤러 전역에서 발생할 수 있는 예외를 잡아 `Throw` 해줌.
 - `@ExceptionHandler` : 특정 클래스에서 발생할 수 있는 예외를 `Throw` 해줌
