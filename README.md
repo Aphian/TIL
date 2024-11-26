@@ -17,5 +17,9 @@
 - `Next js Setting`
 - `JavaScript`
 - `Springboot`
-- `Sprignboot Server`
+- `Springboot Server`
 - `TypeScript`
+- `Springboot JPA`
+- `QueryDSL`
+- `Swagger`
+- `Coding_Life`
