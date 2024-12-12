@@ -5,31 +5,39 @@
         <meta charset="utf-8">
         <!-- <link rel="stylesheet" href="style.css"> -->
         <script>
+            function LinksSetColor(color) {
+                var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length) {
+                        alist[i].style.color = color;
+                        i += 1;
+                    }
+            }
+
+            function bodySetColor(color) {
+                document.querySelector('body').style.color = color;
+            }
+
+            function bodySetBackgroundColor(color) {
+                document.querySelector('body').style.backgroundColor = color;
+            }
+
             function nightDayHandler(self) {
                 var target = document.querySelector('body')
                 if (self.value === 'night') {
-                    target.style.backgroundColor='black';
-                    target.style.color='white';
+                    bodySetBackgroundColor('black');
+                    bodySetColor('white');
                     self.value = 'day';
 
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < alist.length) {
-                        alist[i].style.color = 'powderblue';
-                        i += 1;
-                    }
+                    LinksSetColor('powderblue');
 
                 } else {
-                    target.style.backgroundColor='white';
-                    target.style.color='black';
+                    bodySetBackgroundColor('white');
+                    bodySetColor('black');
                     self.value = 'night';
 
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < alist.length) {
-                        alist[i].style.color = 'blue';
-                        i += 1;
-                    }
+                    LinksSetColor('blue');
+
                 }
             }
         </script>
