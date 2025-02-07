@@ -1,4 +1,4 @@
-### MySQL_01
+### MySQL
 
 #### Mysql Install
 - `MySQL Community Downloads` `Click`
