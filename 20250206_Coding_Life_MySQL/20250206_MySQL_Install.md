@@ -24,3 +24,4 @@
 - `SQL Tools` -> `Add New Connection` 선택 --> 사용 `DB` 선택
 - `MySQL` 연결시 입력한 비밀번호 입력으로 연결
 - `mysql` 이 실행되고 있어야 연결이 됨.
+- `XAMPP Control Panel` 을 이용하여 `MySQL`을 작동한다면 브라우저 상 `http://localhost/phpmyadmin` 접속으로 `DB`를 `GUI` 환경에서 유지 관리를 할 수 있음.
