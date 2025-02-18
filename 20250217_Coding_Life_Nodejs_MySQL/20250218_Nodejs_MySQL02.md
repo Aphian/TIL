@@ -23,3 +23,11 @@ connection.connect();
 #### Node.js & MySQL
 - `DB` 속에서 데이터 가져오기
 - `mysql module` 안에 있는 `query` 메서드를 이용하여 값을 가져옴
+- `query` 메서드 안에 `SQL` 문을 작성하여 필요로 하는 데이터를 `DB` 안에서 가져올수 있음
+- 데이터는 객체 형태로 가져옴
+```
+ex. db.query(`SELECT * FROM DB_name`, function(error, results){ 결과값 })
+
+SQL 문에 `WHERE` 조건을 넣을 경우 두번째 인자에 조건을 넣으면 됨
+ex. db.query(`SELECT * FROM DB_name WHERE id = ?`, [조건], function(error, results){ 결과값 })
+```
