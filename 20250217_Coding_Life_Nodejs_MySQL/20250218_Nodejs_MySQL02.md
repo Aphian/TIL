@@ -19,4 +19,7 @@ var connection = mysql.createConnection({
   
 connection.connect();
 ```
-- 
+
+#### Node.js & MySQL
+- `DB` 속에서 데이터 가져오기
+- `mysql module` 안에 있는 `query` 메서드를 이용하여 값을 가져옴
