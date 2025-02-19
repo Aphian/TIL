@@ -20,7 +20,7 @@ var connection = mysql.createConnection({
 connection.connect();
 ```
 
-#### Node.js & MySQL
+#### Node.js & MySQL (List Read)
 - `DB` 속에서 데이터 가져오기
 - `mysql module` 안에 있는 `query` 메서드를 이용하여 값을 가져옴
 - `query` 메서드 안에 `SQL` 문을 작성하여 필요로 하는 데이터를 `DB` 안에서 가져올수 있음
