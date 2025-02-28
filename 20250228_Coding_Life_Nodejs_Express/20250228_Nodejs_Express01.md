@@ -8,4 +8,6 @@
 - 더 적은 코드로 더 많은 작업을 할 수 있음.
 - 현실의 복잡함에서 벗어나게 해 준다.
 
-#### 
+#### Node.js Express
+- `npm install express --save` 명령어 -> `express` 모듈 설치
+- `expressjs.com` 안에 `document`에서 활용법 
