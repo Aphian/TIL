@@ -49,3 +49,10 @@ app.get('/user/:id', (req, res, next) => {
   res.send('special')
 })
 ```
+
+#### Node.js_Express(Middleware StaticFile)
+- `JS`, `Image` 등등
+- `express.static('경로', [option])`
+```
+app.use(express.static('경로'))
+```
