@@ -13,4 +13,4 @@ app.get('*', function(request, response, next){
 });
 --> get 요청에서만 middleware를 호출함. 불필요한 읽어드림을 배제할 수 있음.
 ```
-- 
+- `Express` 에서는 모든게 `middleware`라고 생각할 수 있음.
