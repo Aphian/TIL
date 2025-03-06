@@ -13,3 +13,12 @@ app.use(function(error, request, response, next) {
 ```
 - `Express`는 내장된 오류 핸들러와 함께 제공됨
 - 내장 오류 핸들러는 앱에서 발생할 수 있는 모든 오류를 처리함
+
+#### Node.js_Express(Router)
+- 소프트웨어가 커짐에 따라 복잡도의 정리정돈이 필요함
+- `route(경로)`들이 많아짐 --> 정리 정돈할 필요가 있음.
+- `express.router` : `router` 라는 것을 생성하는 것
+```
+ex.
+
+```
