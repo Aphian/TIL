@@ -19,6 +19,18 @@ app.use(function(error, request, response, next) {
 - `route(경로)`들이 많아짐 --> 정리 정돈할 필요가 있음.
 - `express.router` : `router` 라는 것을 생성하는 것
 ```
-ex.
+ex. 같은 경로로 시작하는 route 를 묶어서 파일에 저장 후 내보내기
+같은 경로로 시작하는 router 묶은 파일 생성 후
+app.use('공통 경로(ex. /topic)',middleware 이름) 으로 불러들어오기
+
+var express = require('express');
+var router = express.Router();
+
+// 파일 분리
+var topicRouter = require('./routes/topic.js');
+
+// 파일 불러오기
+app.use('/topic',topicRouter)
+
 
 ```
