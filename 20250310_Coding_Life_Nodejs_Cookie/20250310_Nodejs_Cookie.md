@@ -10,3 +10,6 @@
 - `request.headers.cookie` : `cookie`를 웹 브라우저로 읽어오기
 - `npm install cookie` : `node.js` 에서 `cookie`를 다루는 모듈 설치
 - `cookie.parse()` 메서드를 이용하여 객체로 반환하여 사용하기 편하게 변수에 담아짐
+
+#### Cookie (Use)
+- 사용자가 변경한 정보로 다시 해당 웹 브라우저를 들어가도 변경된 내역이 적용됨 --> `cookie` 때문에 가능해짐.
