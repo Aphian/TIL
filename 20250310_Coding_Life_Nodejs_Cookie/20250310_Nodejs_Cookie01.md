@@ -1,4 +1,4 @@
-### Node.js_Cookie
+### Node.js_Cookie_01
 
 #### Cookie
 - 개인화 : 사람 취향 / 선택에 따라웹 페이지를 다르게 보여주는 것, 로그인 인증 등등.
