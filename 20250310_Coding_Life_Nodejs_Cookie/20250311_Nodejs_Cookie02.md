@@ -8,7 +8,7 @@
   3. `Max-Age=` 현재 시점으로 언제까지 `cookie`를 살릴지 지정.
 
 #### Node.js_Cookie (Secure & HttpOnly)
-- `Session`
+- `Secure`
   1. `Https` 프로토콜일 경우에만 `cookie`를 전송
   2. `cookie` 값에 `Secure`를 추가 입력 시 적용됨.
 - `HttpOnly`
