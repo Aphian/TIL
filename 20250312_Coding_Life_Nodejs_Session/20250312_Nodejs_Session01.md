@@ -10,3 +10,4 @@
     saveUninitailzed: true,
 }))
 ```
+- `session` 미들웨어는 위에 코드가 있어야 `request` 객체에 속성으로 `session` 이라는 객체를 추가한다.
