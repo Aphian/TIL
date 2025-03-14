@@ -5,4 +5,3 @@
 - `paasport` 설치 : `npm install passport` 명령어 실행
 - `username & password` 로 로그인 경우 `npm install passport-local` 라이브러리 설치 필요
 - `session` 사용한다는 것이 기본으로 셋팅되어 있음. --> `session` 모듈 사용해야함.
-- 
