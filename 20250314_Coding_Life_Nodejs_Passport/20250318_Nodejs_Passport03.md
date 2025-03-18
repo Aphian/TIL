@@ -5,4 +5,4 @@
 - `npm install connect-flash` 명령어로 설치
 - `passport` 와는 상관 없고 사용하도록 구현되어 있는것.
 - `session` 을 내부적으로 사용함
-- `flash message` 는 1회용 `message`
+- `flash message` 는 1회용 `message`으로 사용하면 `session` 에서 삭제됨.
