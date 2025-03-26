@@ -23,7 +23,7 @@ ex.
 import { Suspense, lazy } from "react"; --> react 에서 제공하는 모듈
 const {createBrowserRouter} = require('react-router-dom');
 
-// 지연 로딩 (Lazy loading)
+지연 로딩 (Lazy loading)
 const Loading = <div>Loading...</div>
 
 const Main = lazy(() => import('../pages/MainPage'))
