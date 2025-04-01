@@ -12,3 +12,6 @@ const [queryParams] = useSearchParams()
 const page = queryParams.get('page') --> 값 추출 후 저장
 
 ```
+
+#### React (useNavigate)
+- `react-router`를 사용할 때, 동적 데이터 처리를 하는 경우가 많음 --> `useNavigate`를 활용하여 데이터 동적 이동 처리를 함.
