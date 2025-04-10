@@ -8,3 +8,7 @@
 - `DTO`는 테이블과는 관련이 없음 -> 상황에 따라 여러개 만들 수 있음
 - `service` 계층을 만들어서 `DTO`를 변환해줌.
 - `return` 타입이 `DTO`가 됨
+
+#### Service Layer
+- 트랜젝션을 신경 많이 써야함.
+- `interface` 에 `@Transactional` 을 붙여준다.
