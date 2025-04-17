@@ -25,4 +25,7 @@ public class CustomServletConfig implements WebMvcConfigurer {
 
 ```
 #### Spring (Post Mapping)
-- 
+- `return` 타입이 `long` 타입임 --> `JSON` 타입으로 바꿔서 해야하함 -> `Map` 타입으로 `return` 을 해줘야함.
+- `JSON` 데이터 타입으로 받으려면 `@RequestBody`로 받아야함
+- `service` 내에서 반환 값이 `Long` 값으로 구성을 함.
+- `return Map.of("TNO", tno)` 로 메서드 반환 값을 설정
