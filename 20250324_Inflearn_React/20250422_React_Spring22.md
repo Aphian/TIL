@@ -10,6 +10,8 @@
 - `react component`는 상태가 변경되면 자동으로 렌더링을 함.
 - `useState`는 함수형 컴포넌트 상태를 유지할 수 없지만 유지하기 위해 `useEffect` 를 사용한다.
 ```
+const [todo, setTodo] = useState(initState)
+--> initState 는 초기 화면을 보여주기 위한 빈 데이터 객체
 useEffect(() => {
 
     getOne(tno).then(data => {
