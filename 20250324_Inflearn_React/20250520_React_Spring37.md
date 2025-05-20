@@ -28,3 +28,42 @@ DB 에 저장하면 끝.
   2. 수정된 파일들 등록 --> 추가하고자 하는 파일 이미지 처리
   3. 기존에 있던 파일 --> 유지하려는(그대로) 파일 이미지 처리
   4. 지우려는 파일 처리
+```
+ex.
+@PutMapping("/{pno}")
+public Map<String, String> modify(@PathVariable("pno") Long pno, ProductDTO productDTO) {
+
+    productDTO.setPno(pno);
+
+    1.
+    ProductDTO oldProductDTO = productService.get(pno);
+
+    2.
+    List<MultipartFile> files = productDTO.getFiles();
+    List<String> currentUploadFileNames = fileUtil.saveFiles(files);
+
+    3.
+    List<String> uploadedFileNames = productDTO.getUploadFileNames();
+
+    if (currentUploadFileNames != null && !currentUploadFileNames.isEmpty()) {
+
+        uploadedFileNames.addAll(currentUploadFileNames);
+
+    }
+
+    productService.modify(productDTO);
+
+    4. 
+    List<String> oldFileNames = oldProductDTO.getUploadFileNames();
+    if (oldFileNames != null && oldFileNames.size() > 0) {
+        List<String> removeFiles = oldFileNames.stream()
+                .filter(fileName -> uploadedFileNames.indexOf(fileName) == -1).collect(Collectors.toList());
+
+        fileUtil.deleteFiles(removeFiles);
+
+    }
+
+    return Map.of("RESULT", "SUCCESS");
+
+}
+```
