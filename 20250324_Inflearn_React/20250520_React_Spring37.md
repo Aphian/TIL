@@ -1,6 +1,6 @@
 ### React_Spring_37
 
-#### Spring(Product Update & Delete)
+#### Spring(Product File Update)
 - 조회 -> 변경이 가능한 항목 수정 -> 저장
 - 파일들이 있어서 좀 더 복잡해짐.
 - 파일을 수정할 경우 변경이 됬는지 안됐는지 알 수가 없음.
@@ -67,3 +67,6 @@ public Map<String, String> modify(@PathVariable("pno") Long pno, ProductDTO prod
 
 }
 ```
+
+#### Spring (Product File Delete)
+- `Element Collection` 은 연관된 `Entity` 에서의 값을 지우면 같이 지워짐. --> 종속적임.
